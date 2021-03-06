@@ -1,9 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
@@ -16,10 +18,12 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-10 offset-md-1 mt-5">
-                <div class="jumbotron">
-                    <h2 class="display-4">Game Application</h2>
-                    <p class="lead font-italic">Python Django Application</p>
+            <div class="col-md-12 mt-5">
+                <div class="card p-3">
+                    <div class="jumbotron text-center">
+                        <h2 class="display-4">Game Application</h2>
+                        <p class="lead font-italic">Python Django Application</p>
+                    </div>
                     <hr>
                     {% block content %}{% endblock %}
                 </div>
@@ -27,6 +31,9 @@
         </div>
     </div>
 
+
+    <script src="{% static 'js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'js/jquery-3.4.1.min.js'%}"></script>
 </body>
 
 </html>
