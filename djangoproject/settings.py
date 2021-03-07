@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'gameapp.apps.GameappConfig',
     'crispy_forms',
-    'DRF.apps.DrfConfig',
+    'gamerest.apps.GamerestConfig',
     'rest_framework'
 ]
 
